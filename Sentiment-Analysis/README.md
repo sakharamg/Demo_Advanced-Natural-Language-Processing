@@ -10,5 +10,5 @@ Training code and demo for sentiment analysis with and without word2vec
 ## Loading Data
 Unzip IMDB Dataset.tar.xz located in data directory  
 ## Training models
-bow_logr.ipynb: Bag of Words used with Logistic Regression  
-w2v_LSTM.ipynb: Word2Vec used with LSTM  
+**bow_logr.ipynb**: Bag of Words used with Logistic Regression  
+**w2v_LSTM.ipynb**: Word2Vec used with LSTM  
