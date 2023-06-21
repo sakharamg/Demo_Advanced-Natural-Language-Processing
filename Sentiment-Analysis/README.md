@@ -12,5 +12,6 @@ requirements.txt contains libraries required for demo and training
 ## Loading Data
 Unzip IMDB Dataset.tar.xz located in data directory  
 ## Training models
+Run the jupyter notebooks in the training directory  
 **bow_logr.ipynb**: Bag of Words used with Logistic Regression  
 **w2v_LSTM.ipynb**: Word2Vec used with LSTM  
