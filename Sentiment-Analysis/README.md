@@ -1,5 +1,7 @@
 # Sentiment Analysis
 Training code and demo for sentiment analysis with and without word2vec  
+## Installing Requirements
+requirments.txt contains libraries required for demo and training  
 ## Download Models
 1) Download word2vec model from https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g  
 2) Save in the models directory.  
