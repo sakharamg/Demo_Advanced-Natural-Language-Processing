@@ -67,8 +67,6 @@ def pad_trunc(data, maxlen):
     for a given dataset pad with zero vectors or truncate to maxlen
     """
     new_data = []
-    
-    #create a vector of 0s the length of our word vectors
     zero_vector = []
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
@@ -87,7 +85,6 @@ def pad_trunc(data, maxlen):
         new_data.append(temp)
     return new_data
 st.title('Word2Vec Demo')
-# tab1, tab2 = st.tabs(["Sentiment Analysis","Analogy"])
 tab1, tab2 = st.tabs(["Sentiment Analysis"," "])
 with tab1:
     st.header("**Sentiment Analysis**")
@@ -123,25 +120,3 @@ with tab1:
                 st.write("Sentiment using Bag of Words: :thumbsup: ",bow_score)
             else:
                 st.write("Sentiment using Bag of Words: :thumbsdown: ",bow_score)
-
-# with tab2:
-#     st.header("**Analogy using Word2Vec**")
-#     with st.form("senti_form"):
-#         # st.write("**Sentiment Analysis**")
-#         cols=st.columns(3)
-#         with cols[0]:
-#             woman= st.text_input('Word1',"king")
-#         with cols[1]:
-#             man = st.text_input('Word2',"man")
-#         with cols[2]:
-#             king = st.text_input('Word3',"woman")
-#         st.write("Word1: Word2 ~ Word3: _____")
-#         st.write("e.g. king: man ~ woman: queen")
-
-#         # Every form must have a submit button.
-#         submitted_analogy = st.form_submit_button("Find Analogy")
-#         if submitted_analogy:
-#             result=st.session_state.word_vectors.most_similar(positive=[woman, king], negative=[man])
-#             st.write("Top 3 Analogous Words:")
-#             for sim_key, sim in result[:3]:
-#                 st.write(sim_key, sim)
